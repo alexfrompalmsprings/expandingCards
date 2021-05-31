@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,12 +24,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
-  border-radius: 50px;
+  border-radius: 15px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
+  transition: flex 0.7s ease-in;
   -webkit-transition: all 700ms ease-in;
 }
 
@@ -39,7 +40,7 @@ body {
   bottom: 20px;
   left: 20px;
   margin: 0;
-  opacity: 0;
+  opacity: 0.08;
 }
 
 .panel.active {
@@ -56,6 +57,7 @@ body {
     width: 100vw;
   }
 
+  /* select the last two of the  */
   .panel:nth-of-type(4),
   .panel:nth-of-type(5) {
     display: none;
